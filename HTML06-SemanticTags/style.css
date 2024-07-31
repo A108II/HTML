@@ -1,0 +1,20 @@
+body{
+  background-color: black;
+  color:antiquewhite;
+  font-size: large;
+}
+h1{
+  text-align: center;
+}
+
+a{
+  color:aliceblue;
+}
+
+a:visited{
+  color: aquamarine;
+}
+
+a:hover, a:active{
+  color: #eee;
+}

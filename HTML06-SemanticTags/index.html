@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>My page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Ali Saadati">
+<meta name="description" content="This page is about how html works">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="../HTML01/html.png" type="image/x-icon">
+</head>
+
+<body>
+<header>
+<h1>Welcome!</h1>
+<!-- 
+labeling nav with arial-label to ensure it is accessible to assistive technologies like screen readers to better identify nav section.
+-->
+
+<!-- 
+When the screen reader encounters the <nav aria-label="primary-navigation"> element, it will announce "primary-navigation" to the user, helping them understand that they are entering a section of the page containing navigation links. 
+-->
+<nav aria-label="primary-navigation">
+<ul>
+<li><a href="#ai">Learn about AI</a></li>
+<li><a href="#tech">Learn about Tech</a></li>
+</ul>
+</nav>
+</header>
+
+<hr>
+
+<main>
+<article id="ai">
+<h2>AI</h2>
+<section>
+<h3>Best AI websites</h3>
+<ul>
+<li><a href="https://chatgpt.com" >ChatGPT</a>
+</li>
+
+<li>
+<a href="https://www.perplexity.ai/" >Perplexity</a>
+</li>
+</ul>
+</section>
+
+<section>
+<h3>Best AI Image generator websites</h3>
+<ul>
+<li><a href="https://www.bing.com/images/create?FORM=GENILP">Bing Image generator</a></li>
+<li><a href="https://pixlr.com/image-generator/">Pixlr</a></li>
+</ul>
+
+<!-- 
+sidebar of the page, or complementary text which is not as important as the what's in the article. 
+-->
+<aside>
+<!-- details and summary creates a disclosure widget that users can interact and show or hide the additional content -->
+<details>
+<summary>Guess the <mark> number</mark> of AI websites</summary>
+<p>More than 300 thousand websites!</p>
+</details>
+
+<details>
+<summary>Guess the number of hours I code per day.</summary>
+<p>I start at <time datetime="05:00"> 5 am</time> and I write code for <time datetime="PT3H">3 hours </time>every morning.</p>
+</details>
+
+<details>
+<summary>
+Guess how many years I've been coding.
+</summary>
+<p>I'm coding for <span data-duration="P2Y9M24DT5H32M56S">2 years, 9 months, 24 days, 5 hours, 32 minutes, and 56 seconds</span></p>
+</details>
+</aside>
+</section>
+</article>
+
+<hr>
+
+<article id="tech">
+<h2>Technologies for web development</h2>
+<section>
+<h3>Basics</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+</ul>
+</section>
+
+<section>
+<h3>Frontend Frameworks</h3>
+<ul>
+<li>React</li>
+<li>Vue</li>
+<li>Angular</li>
+</ul>
+</section>
+
+<section>
+<h3>Backend frameworks</h3>
+<ul>
+<li>NodeJS</li>
+<li>Laravel</li>
+<li>Django</li>
+<li>Spring Boot</li>
+</ul>
+</section>
+
+<section>
+<h3>Popular stacks</h3>
+<ul>
+<li>MERN</li>
+<li>MEAN</li>
+<li>PERN</li>
+<li>LAMP</li>
+</ul>
+
+<aside>
+<details>
+<summary>
+Which stack is the most in demand?
+</summary>
+<p>The most in demand stack depends on the location you're in. Generally startups, mid-sized companies tend to use <mark> MERN </mark>stack. While that's true, enterprise companies and banks tend to use <mark>Spring boot</mark> technologies because of the high security and robustness.</p>
+</details>
+
+</aside>
+</section>
+</article>
+<hr>
+
+<h2>Some nice images</h2>
+<figure>
+<img src="image/caribbean.jpeg" alt="Nice picture of caribbeans" title="Downloaded from bing image generator" width="300" height="300" loading="lazy">
+<figcaption>Enjoying holidays in caribbean</figcaption>
+</figure>
+
+ <!-- 
+ We set width and height because of a thing called cumulative layout shift, which is a sudden layout shit, when you clicked on something you did not want to click, because the button or image suddenly moved.
+
+ We set the width and height to tell the browser that the picture will take some space, if we don't provide that, it will shift once it figures out the image size.
+ -->
+<figure>
+<img src="image/DCMarvel.jpeg" alt="Superman vs Thor" title="Battle between Thor and Superman" width="300" height="300" loading="lazy">
+<figcaption>Thor is beating Superman</figcaption>
+ </figure>
+
+<figure>
+<img src="image/tabriz.jpeg" alt="Tabriz city" title="Tabriz ancient city" width="300" height="300" loading="lazy">
+<figcaption>Tabriz, Azerbaijan is an ancient city!</figcaption>
+</figure>
+
+<figure>
+<img src="image/htmlLikeLogo.jpeg" alt="html logo" title="This logo is an alternative of the real html logo" width="300" height="300" loading="lazy">
+</figure>
+
+<figure>
+<figcaption>An example of HTML code</figcaption>
+<p>
+<code>
+&lt;h1&gt;Hello World&lt;/h1&gt;
+</code>
+</p>
+ </figure>
+ <!-- 
+ loading = "lazy" is good for the performance as only it loads the picture when the picture is about to be shown to the user. 
+ -->
+
+<br>
+<hr>
+</main>
+
+<footer>
+<p>
+&copy;
+<a href="about.html">Ali Saadati</a>
+</p>
+<a href="#">Back to top</a>
+</footer>
+
+</body>
+</html>
+
+<!-- 
+section vs article tag
+section: Generic purposes, if we want to create a section which seperates this section from other sections.
+article: Has a clear topic which is different from other topics of the webpage.
+-->
+
+
+
+<!-- 
+Note:
+Two different elements to avoid:
+1. <div></div> block-level element
+2. <span></div> inline element
+
+Reason:
+No semantic meaning
+div is like a section element but without any semantic meaning, div is block-level element.
+
+Where can it be used?
+For applying certain css style
+-->

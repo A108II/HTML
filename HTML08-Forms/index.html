@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Ali Saadati">
+<meta name="description" content="This page is about how html works">
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="icon" href="../HTML01/html.png" type="image/x-icon">
+</head>
+
+<body>
+<header>
+<h1>Welcome to the website!</h1>
+<!-- aria-label makes navigation accessible to screenreaders -->
+<nav aria-label="primary navigation">
+<ul>
+<li><a href="#ai">Learn about AI</a></li>
+<li><a href="#tech">Learn about Tech</a></li>
+<li><a href="#images">See images</a></li>
+<li><a href="#table">See table for countries</a></li>
+<li><a href="#contact">Contact me</a></li>
+</ul>
+</nav>
+</header>
+
+<hr>
+
+<main>
+<article id="ai">
+<h2>AI</h2>
+<section>
+<h3>Best AI websites</h3>
+<ul>
+<li><a href="https://chatgpt.com" >ChatGPT</a></li>
+<li><a href="https://www.perplexity.ai/" >Perplexity</a></li>
+</ul>
+</section>
+
+<section>
+<h3>Best AI Image generator websites</h3>
+<ul>
+<li><a href="https://www.bing.com/images">Bing Image generator</a></li>
+<li><a href="https://pixlr.com">Pixlr</a></li>
+</ul>
+
+<aside>
+<details>
+<summary>Guess the <mark> number</mark> of AI websites.</summary>
+<p>More than <mark>300 thousand</mark> websites!</p>
+</details>
+
+<details>
+<summary>Guess how many <mark>hours</mark> I sleep per day.</summary>
+<p>I sleep <time datetime="PT5H">5 hours</time> per day</p>
+</details>
+
+<details>
+<summary>Guess the number of <mark>hours</mark> I code per day.</summary>
+<p>I start at <time datetime="05:00"> 5 am</time> and I write code for <time datetime="PT3H">3 hours </time>every morning.</p>
+</details>
+
+<details>
+<summary>Guess how many <mark>years</mark> I've been coding.</summary>
+<p>I'm coding for <span data-duration="P2Y9M24DT5H32M56S">2 years, 9 months, 24 days, 5 hours, 32 minutes, and 56 seconds</span></p>
+</details>
+</aside>
+
+<br>
+
+<table>
+<caption>My daily shedule</caption>
+
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th scope="col">Time</th>
+<th scope="col">Activity</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th scope="row">Early morning</th>
+<td><time datetime="05:00">5am</time> - <time datetime="08:00">8am</time></td>
+<td>Coding</td>
+</tr>
+
+<tr>
+<th scope="row">Late morning</th>
+<td><time datetime="08:00">8am</time> - <time datetime="09:00">9am</time></td>
+<td>Eat breakfast</td>
+</tr>
+
+<tr>
+<th scope="row">After noon - Evening</th>
+<td><time datetime="09:00">09am</time> - <time datetime="17:00">5pm</time></td>
+<td>Study other courses</td>
+</tr>
+
+<tr>
+<th scope="row">Evening</th>
+<td rowspan="2">Othertimes</td>
+<td>Free Time</td>
+</tr>
+
+<tr>
+<th scope="row">Night</th>
+<td>Sleep</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="3">Yeah, this is what I do everyday!</td>
+</tr>
+</tfoot> 
+
+</table>
+</section>
+</article>
+
+<hr>
+
+<article id="tech">
+<h2>Technologies for web development</h2>
+<section>
+<h3>Basics</h3>
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+</ul>
+</section>
+
+<section>
+<h3>Frontend Frameworks</h3>
+<ul>
+<li>React</li>
+<li>Vue</li>
+<li>Angular</li>
+</ul>
+</section>
+
+<section>
+<h3>Backend frameworks</h3>
+<ul>
+<li>NodeJS</li>
+<li>Laravel</li>
+<li>Django</li>
+<li>Spring Boot</li>
+</ul>
+</section>
+
+<section>
+<h3>Popular stacks</h3>
+<ul>
+<li>MERN</li>
+<li>MEAN</li>
+<li>PERN</li>
+<li>LAMP</li>
+</ul>
+
+<aside>
+<details>
+<summary>Which stack is the most in demand?</summary>
+<p>The most in demand stack depends on the location you're in. Generally startups, mid-sized companies tend to use <mark> MERN </mark>stack. While that's true,enterprise companies and banks tend to use <mark>Spring boot</mark> technologies because of the high security and robustness.</p>
+</details>
+
+<details>
+<summary>How much time it takes to learn full-stack development?</summary>
+<p>It's up to how much time you put in effort to learn backend and frontend technologies, but generally it takes at least <span data-duration="2Y">2 years</span> to really master the intricacies of full stack development!</p>
+</details>
+
+</aside>
+</section>
+</article>
+
+<hr>
+<article id="images">
+<h2>Images</h2>
+<figure>
+<img src="image/caribbean.jpeg" alt="Nice picture of caribbeans" title="Downloaded from bing image generator" width="300" height="300" loading="lazy">
+<figcaption>Enjoying holidays in caribbean</figcaption>
+</figure>
+
+<figure>
+<img src="image/DCMarvel.jpeg" alt="Superman vs Thor" title="Battle between Thor and Superman" width="300" height="300" loading="lazy">
+<figcaption>Thor is beating Superman</figcaption>
+</figure>
+
+<figure>
+<img src="image/tabriz.jpeg" alt="Tabriz city" title="Tabriz ancient city" width="300" height="300" loading="lazy">
+<figcaption>Tabriz, Azerbaijan is an ancient city!</figcaption>
+</figure>
+
+<figure>
+<img src="image/htmlLikeLogo.jpeg" alt="html logo" title="This logo is an alternative of the real html logo" width="300" height="300" loading="lazy">
+</figure>
+</article>
+
+
+<figure>
+<figcaption>An example of HTML code</figcaption>
+<p>
+<code>
+&lt;h1&gt;Hello World&lt;/h1&gt;
+</code>
+</p>
+</figure>
+
+<article id="table">
+<h2>Countries for developers</h2>
+<table>
+<caption>Best countries for software developers</caption>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Life quality</th>
+<th>Healthcare system</th>
+<th>Life expectancy</th>
+<th>Salary</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th>Austria</th>
+<td>Excellent</td>
+<td>Excellent</td>
+<td>High</td>
+<td>$98,000 Avg</td>
+</tr>
+
+<tr>
+<th>Switzerland</th>
+<td>Excellent</td>
+<td>Excellent</td>
+<td>High</td>
+<td>$110,000 Avg</td>
+</tr>
+
+<tr>
+<th>Germany</th>
+<td>Excellent</td>
+<td>Excellent</td>
+<td>High</td>
+<td>$70,000 Avg</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="5">Austria, Switzerland and Germany are the best countries in Europe for developers.</td>
+</tr>
+</tfoot>
+
+</table>
+</article>
+
+<hr>
+
+<article id="contact">
+<h2>Contact me</h2>
+<p>I'd really like to hear from you!</p>
+<p>
+<form action="https://httpbin.org/get" method="get">
+<!-- `id` and `for` need to match, name attribute identifies the input at the server level, when information is sent to the server, it identifies the input with name attribute. -->
+
+<!-- Organize the form with fieldset tag, which surrounds the form and make it more structured by framing it -->
+<fieldset>
+<legend>Personal information</legend>
+<p>
+<label for="firstName">First name:</label>
+<input type="text" name="firstname" id="firstName" placeholder="John" autocomplete="on" autofocus required>
+</p>
+
+<p>
+<label for="lastName">Last name:</label>
+<input type="text" name="lastname" id="lastName" placeholder="Doe" autocomplete="on" required>
+</p>
+
+<p>
+<label for="password">Password:</label>
+<input type="password" name="password" id="password" placeholder="Your password" required>
+</p>
+
+<p>
+<label for="phone">Phone:</label>
+<input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+<!-- pattern attribute supports regular expression pattern, here we will give a pattern for the phone number, pattern enforces what should be written in the input -->
+</p>
+
+<p>
+<label for="decade">Favorite decade</label>
+<input type="number" name="decade" id="decade" min="1950" max="2024" step="10" value="1980">
+</p>
+
+
+<label for="coffee">Favorite coffee</label>
+<select name="coffee" id="coffee" multiple size="3">
+<optgroup label="Coffees">
+<option value="regular coffee">Regular Coffee</option>
+<option value="iced coffee">Iced coffee</option>
+</optgroup>
+<optgroup label="Espresso Drinks">
+<option value="Cappuchino">Cappuccino</option>
+<option value="latte">Latte</option>
+<option value="Cortado">Cortado</option>
+<option value="Americano" selected>Americano</option>
+</optgroup>
+<option value="others">Others</option>
+</select>
+
+<!-- Another option which achieves the same result -->
+<!--
+<label for="coffee">Favorite Coffee</label>
+<input type="text" name="coffee" id="coffee" list="coffee-list">
+<datalist id="coffee-list">
+<option value="Coffee">
+<option value="Latte">
+<option value="Espresso">
+<option value="Cortado">
+<option value="Americano">
+<option value="Others">
+</datalist>
+-->
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>What's your favorite food?</legend>
+<p>
+<input type="radio" name="food" id="tacos" value="tacos">
+<label for="tacos">Tacos</label>
+</p>
+
+<p>
+<input type="radio" name="food" id="pizza" value="pizza">
+<label for="pizza">Pizza</label>
+</p>
+
+<p>
+<input type="radio" name="food" id="dumplings" value="dumplings">
+<label for="dumplings">Dumplings</label>
+</p>
+
+<p>
+<input type="radio" name="food" id="others" value="others">
+<label for="others">Others</label>
+</p>
+</fieldset>
+
+<fieldset>
+<legend>Do you have pets?</legend>
+<p>
+<input type="checkbox" name="pets" id="dog" value="dog">
+<label for="dog">Dog</label>
+</p>
+
+<p>
+<input type="checkbox" name="pets" id="cat" value="cat">
+<label for="cat">Cat</label>
+</p>
+
+<p>
+<input type="checkbox" name="pets" id="fish" value="fish">
+<label for="fish">Fish</label>
+</p>
+
+<p>
+<input type="checkbox" name="pets" id="otherPets" value="otherPets">
+<label for="otherPets">Others</label>
+</p>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Send me a note</legend>
+<label for="message">Your message:</label>
+<br>
+<textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+</fieldset>
+
+<br>
+<!-- <input type="submit" value="submit"> -->
+
+<button type="submit">Submit</button>
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+<button type="reset">Reset</button>
+</form>
+</article>
+</main>
+
+<footer>
+<p>
+&copy;
+<a href="about.html">Ali Saadati</a>
+</p>
+<a href="#">Back to top</a>
+</footer>
+
+</body>
+</html>
+
+
